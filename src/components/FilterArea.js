@@ -27,7 +27,7 @@ export default function FilterArea() {
               productCtx.filterProduct(`All`); //--> All filter button
             }}
             className={`btn ${
-              productCtx.selectedCategory == "productsData"
+              productCtx.selectedCategory === "productsData"
                 ? "bg-[#cc5500] text-white"
                 : null
             }`}
@@ -40,7 +40,7 @@ export default function FilterArea() {
               productCtx.filterProduct(`men's clothing`); // --> men's clothing filter button
             }}
             className={`btn ${
-              productCtx.selectedCategory == "men's clothing"
+              productCtx.selectedCategory === "men's clothing"
                 ? "bg-[#cc5500] text-white"
                 : null
             }`}
@@ -51,7 +51,7 @@ export default function FilterArea() {
           <button
             onClick={() => productCtx.filterProduct(`jewelery`)} // --> jewelery filter button
             className={`btn ${
-              productCtx.selectedCategory == "jewelery"
+              productCtx.selectedCategory === "jewelery"
                 ? "bg-[#cc5500] text-white"
                 : null
             }`}
@@ -62,7 +62,7 @@ export default function FilterArea() {
           <button
             onClick={() => productCtx.filterProduct(`electronics`)} //--> electronics filter button
             className={`btn ${
-              productCtx.selectedCategory == "electronics"
+              productCtx.selectedCategory === "electronics"
                 ? "bg-[#cc5500] text-white"
                 : null
             }`}
@@ -73,7 +73,7 @@ export default function FilterArea() {
           <button
             onClick={() => productCtx.filterProduct(`women's clothing`)} // --> women's clothing filter button
             className={`btn ${
-              productCtx.selectedCategory == "women's clothing"
+              productCtx.selectedCategory === "women's clothing"
                 ? "bg-[#cc5500] text-white"
                 : null
             }`}
