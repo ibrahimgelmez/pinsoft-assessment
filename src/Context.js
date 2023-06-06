@@ -5,7 +5,7 @@ export const ProductContext = createContext();
 
 export default function ProductContextProvider({ children }) {
 
-  const [products, setProducts] = useState(productsData);
+  const [products] = useState(productsData);
   const [selectedCategory, setSelectedCategory] = useState();
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [inputText, setInputText] = useState("");
@@ -13,7 +13,7 @@ export default function ProductContextProvider({ children }) {
   const [inCart,setInCart] = useState([])
 
   function filterProduct(productCategory) {    //------> filter algorithm
-    if (productCategory == "All") {
+    if (productCategory === "All") {
       setSelectedCategory(productCategory);
       setFilteredProducts(products);
       return;
