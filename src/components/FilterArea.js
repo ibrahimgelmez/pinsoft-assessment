@@ -11,7 +11,7 @@ export default function FilterArea() {
       <div>
         <i
           onClick={() => setShowMenu((prev) => !prev)}
-          class={
+          className={
             showMenu ? "ri-close-line text-2xl text-[#cc5500]" : "ri-menu-2-line text-2xl text-[#cc5500]"
           }
         > Filter</i>

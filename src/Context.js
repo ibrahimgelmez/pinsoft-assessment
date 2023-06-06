@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 import { productsData } from "./data/products-list";
 
 export const ProductContext = createContext();
@@ -19,7 +19,7 @@ export default function ProductContextProvider({ children }) {
       return;
     }
     const updatedProducts = productsData.filter(
-      (product) => productCategory == product.category
+      (product) => productCategory === product.category
     );
     setFilteredProducts(updatedProducts);
     setSelectedCategory(productCategory);

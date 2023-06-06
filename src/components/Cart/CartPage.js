@@ -19,9 +19,9 @@ export default function Cart() {
     setTimeout(() => console.log("Succesfully ordered."), 2500);
     setTimeout(() => setInCart([]), 2500);
   }
-  if (inCart.length == 0) {
+  if (inCart.length === 0) {
     return (
-      <div>
+      <div >
         <Header />
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-center text-4xl font-bold mt-24">Cart</h1>
@@ -35,7 +35,7 @@ export default function Cart() {
   return (
     <div>
       <Header />
-      <h1 className="text-center text-4xl font-bold mt-16 md:mt-24">Cart</h1>
+      <h1 className="text-center text-4xl font-bold mt-14 mb-8  md:mt-28 text-[#cc5500]">Cart</h1>
       <div className="flex flex-col justify-center items-center">
         {inCart.map((product) => (
           <InCartProduct
@@ -52,10 +52,10 @@ export default function Cart() {
       </div>
 
       {inCart.length > 0 && (
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <button
             onClick={placeOrder}
-            className="px-8 py-4 mt-4 bg-gray-800 text-white"
+            className="px-8 py-4  my-8 bg-[#cc5500] text-white"
           >
             {orderText}
           </button>
