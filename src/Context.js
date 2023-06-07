@@ -33,7 +33,7 @@ export default function ProductContextProvider({ children }) {
     if (inputText === "") {
       return product;
     } else {
-      return product.title.toLowerCase().includes(inputText);
+      return product.title.toLowerCase().includes(inputText.toLowerCase());
     }
   });
 
